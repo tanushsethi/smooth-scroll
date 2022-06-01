@@ -19,3 +19,17 @@
     color: aliceblue;
     margin: 20px;
 }
+
+.sections{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.sections:nth-child(2n+1){
+    background-color: rgb(170, 215, 255);
+}
