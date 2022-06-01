@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#nav{
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.846);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 20px;
+}
