@@ -2,7 +2,13 @@ function scroll(e){
     e.preventDefault();
     var section = document.getElementById(this.dataset.name);
     console.log(section);
-    window.scrollTo(0,section.getBoundingClientRect().top);
+    var scroller = setInterval(()=>{
+        if(section.getBoundingClientRect().top<=0){
+            clearInterval(scroller);
+            return;
+        }
+        window.scrollBy(0, 50);
+    }, 20);
 }
 
 var menuItems = document.querySelectorAll("nav a");
